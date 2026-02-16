@@ -9,3 +9,6 @@ rating <- as.matrix(rating_raw[, 2:10])
 
 # Read a matrix of dummy variables that describe specification of each profile
 X_raw <- read.csv("Design_Matrix.csv", header = TRUE)
+
+# Convert to matrix, excluding the "Profile" column
+XD <- as.matrix(X_raw[, 2:10])
